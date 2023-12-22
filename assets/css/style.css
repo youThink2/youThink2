@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Anarchy;
+    src: url(assets/fonts/AgainstMyself-OA38.ttf);
+}
+
+
+nav{
+    
+    height: 100px;
+    
+    background: #e0e0e0;
+    box-shadow:  25px 25px 50px #bebebe,
+                -25px -25px 50px #ffffff;
+    
+}
+
+
+
+nav ul{
+    
+    list-style: none;
+    flex-grow: 1;
+    height: 100%;
+}
+
+nav ul li{
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li a{
+    
+    font-size: 30px;
+    line-height: 90px;
+
+    text-align: center;
+    
+}
+
+
+/* Anarchy Font */
+.af{
+    font-family: Anarchy;
+}
