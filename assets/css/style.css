@@ -14,14 +14,20 @@
 
 /* Nav */
 nav{
-    
+    font-family: 'roboto';
+    font-weight: 400;
     height: 100px;
     
+   
+
+
     background: #e0e0e0;
     box-shadow:  25px 25px 50px #bebebe,
                 -25px -25px 50px #ffffff;
     
 }
+
+
 
 
 
@@ -58,6 +64,54 @@ nav ul li a img{
     
 }
 
+.hover-underline-animation {
+  
+  position: relative;
+  color:#393838;
+}
+
+.hover-underline-animation:after {
+  margin-left: 46%;
+  content: '';
+  position: absolute;
+  width: 7%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #393838;
+  transform-origin: bottom right;
+  transition: transform 0.30s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.directory{
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
+
+.directory-top-text{
+  text-decoration: none;
+  color: #393838;
+  font-family: 'Roboto';
+  font-weight: 700;
+  letter-spacing: 9px;
+  margin-left: 6px;
+}
+
+
+.directory-bot-text{
+  text-decoration: none;
+  color: #393838;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
 
 
 /* Card trackers */
@@ -86,7 +140,7 @@ nav ul li a img{
 }
 
 #card {
-
+  
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -96,11 +150,14 @@ nav ul li a img{
   border-radius: 20px;
   transition: 700ms;
   background-color: #D1D1D1;
+  background-image: linear-gradient(rgba(184, 183, 183, 0.5), rgba(197, 193, 193, 0.5)), url('https://assets-v2.lottiefiles.com/a/490bc92a-1170-11ee-9e35-0f6eacef4099/DBwCBrM6eQ.gif');
+
+  background-repeat: repeat;
 }
 
 .subtitle {
-  transform: translateY(145px);
-  color: #393838;
+  font-size: small;
+  
   text-align: center;
   width: 100%;
 }
@@ -113,7 +170,8 @@ nav ul li a img{
   position: absolute;
   font-size: large;
   width: 90%;
-  font-weight: bold;
+  font-family: 'roboto';
+  font-weight: 700;
   color: #393838;
   border: transparent solid;
   border-radius: 1px;
@@ -416,17 +474,25 @@ nav ul li a img{
 
 .noselect {
   -webkit-touch-callout: none;
-   /* iOS Safari */
+   
   -webkit-user-select: none;
-   /* Safari */
-   /* Konqueror HTML */
+ 
   -moz-user-select: none;
-   /* Old versions of Firefox */
+
   -ms-user-select: none;
-   /* Internet Explorer/Edge */
+
   user-select: none;
-   /* Non-prefixed version, currently
-									supported by Chrome, Edge, Opera and Firefox */
+ 
 }
 
+.item-title{
+  font-family: 'roboto';
+  font-weight: 300;
+  transform: translateY(170px);
+}
 
+.item-price{
+  font-family: 'roboto';
+  font-weight: 400;
+  transform: translateY(153px);
+}
