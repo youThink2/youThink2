@@ -5,10 +5,13 @@
 }
 
 
+/* roboto is used*/
+* {
+  font-family: 'roboto';
+}
 
 
-
-
+/* this is the maximum screen size that i want the page to stretch to*/
 .custom-max-width {
   max-width: 1535px; 
   
@@ -18,7 +21,7 @@
 
 /* Nav */
 nav{
-    font-family: 'roboto';
+    
     font-weight: 400;
     height: 60px;
     font-size: x-small;
@@ -104,8 +107,8 @@ nav ul li a{
 .directory{
   
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
 }
 
 .directory-slash{
@@ -116,7 +119,7 @@ nav ul li a{
   display: none;
   text-decoration: none;
   color: #393838;
-  font-family: 'Roboto';
+  
   font-weight: 700;
   letter-spacing: 9px;
   margin-left: 6px;
@@ -127,22 +130,23 @@ nav ul li a{
   display: none;
   text-decoration: none;
   color: #393838;
-  font-family: 'Roboto';
+  
   font-weight: 300;
 }
 
 
 
-/* Card */
+
 
 .flex-container {
     display: flex;
     
     align-items: center; 
-    margin-top: 50px; /* Adjust as needed */
+    
   }
   
-  
+
+/* Card Product Pages*/
 
 .card-container {
   position: relative;
@@ -159,7 +163,7 @@ nav ul li a{
 }
 
 .item-card{
-  margin-bottom: 60px;
+  margin-bottom: 4.5rem;
 }
 
 #card {
@@ -195,7 +199,7 @@ nav ul li a{
   position: absolute;
   font-size: large;
   width: 90%;
-  font-family: 'roboto';
+ 
   font-weight: 700;
   color: #393838;
   border: transparent solid;
@@ -517,13 +521,13 @@ nav ul li a{
 
 
 .item-title{
-  font-family: 'roboto';
+
   font-weight: 300;
   transform: translateY(170px);
 }
 
 .item-price{
-  font-family: 'roboto';
+
   font-weight: 400;
   transform: translateY(153px);
 }
@@ -576,28 +580,127 @@ nav ul li a{
     display: inline;
     text-decoration: none;
     color: #393838;
-    font-family: 'Roboto';
+    
     font-weight: 300;
   }
   
 }
 
-@media (min-width: 909px) {
-  .noselect {
-    
-  }
 
+
+/* Support Page */
+
+.contactForm{
+  max-width: 600px;
+  margin: auto;
+  
+}
+
+.contactForm fieldset{
+  background: #bba8a8;
+  box-shadow:  25px 25px 50px #bebebe,
+              -25px -25px 50px #ffffff;
+  
+
+  padding: 4rem 3.5rem;
+  margin: 5rem 2rem 0rem;
+  border: 1px solid #e6e6e6;
+  
+
+  background-color: #ffffff;
+  border-radius: 5px;
 
 
 }
 
-@media (min-width: 1030px) {
-  .noselect {
-   
-  }
+.contactForm fieldset legend{
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: #ffffff;
+  margin-bottom: 2.5rem;
+  
 
 
+}
+
+
+.contactForm input[type=text],
+.contactForm input[type=tel],
+.contactForm input[type=email],
+.contactForm select,
+.contactForm textarea{
+  width: 100%;
+  height: 45px;
+  padding-left: 20px;
+  border-radius: 3px;
+  border: solid 0.1px #c7c7c7;
+  
+  
+  margin: 1rem 0.1rem 2.5rem;
+
+}
+
+.contactForm input[type=text]:focus,
+.contactForm input[type=email]:focus,
+.contactForm select:focus,
+.contactForm textarea:focus{
+  background-color: #eef5f5;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder{
+  opacity: 100;
+}
+
+.contactForm textarea{
+  height: 120px;
+  padding-top: 1em;
+}
+
+
+
+.buttonsDiv{
+  width: 100%;
+  display: flex;
+  padding: 0 1rem 1rem;
+}
+
+.buttonDiv{
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.buttonDiv button{
+  width: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  height: 3rem;
+  border: none;
+  border-radius: 4px;
+  
+
+}
+
+label{
+  font-weight: 400;
+}
+
+
+
+.buttonDiv button[type=submit]{
+  margin: 2rem 0rem 10rem 0rem;
+  color: #e6e6e6;
+  transition: 1s;
+  background: #393838;
+  box-shadow:  25px 25px 50px #bebebe,
+              -25px -25px 50px #ffffff;
   
 }
 
 
+
+.buttonDiv button[type=submit]:hover{
+  background-color: #676767;
+  
+}
