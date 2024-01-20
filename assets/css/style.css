@@ -5,10 +5,14 @@
 }
 
 
-@row-width {
+
+
+
+
+.custom-max-width {
+  max-width: 1535px; 
   
 }
-
 
 /*---------------------*/
 
@@ -16,12 +20,12 @@
 nav{
     font-family: 'roboto';
     font-weight: 400;
-    height: 100px;
-    
+    height: 60px;
+    font-size: x-small;
    
 
 
-    background: #e0e0e0;
+    background: #bba8a8;
     box-shadow:  25px 25px 50px #bebebe,
                 -25px -25px 50px #ffffff;
     
@@ -53,15 +57,18 @@ nav ul li a{
 }
 
 
-/* SNARE logo in nav */
-nav ul li a img{
+/* SNARE logo image in nav */
+.snare-image-nav{
     width: 185px;
     
     
-    
-    
-    
-    
+}
+
+
+
+/* the li of the SNARE logo image in nav */
+.snare-nav{
+  display: none;
 }
 
 .hover-underline-animation {
@@ -89,13 +96,24 @@ nav ul li a img{
   transform-origin: bottom left;
 }
 
+.snare-below-nav{
+  width: 250px;
+  
+}
+
 .directory{
+  
   text-align: center;
   margin-top: 70px;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
+}
+
+.directory-slash{
+  display: none;
 }
 
 .directory-top-text{
+  display: none;
   text-decoration: none;
   color: #393838;
   font-family: 'Roboto';
@@ -106,6 +124,7 @@ nav ul li a img{
 
 
 .directory-bot-text{
+  display: none;
   text-decoration: none;
   color: #393838;
   font-family: 'Roboto';
@@ -114,8 +133,7 @@ nav ul li a img{
 
 
 
-/* Card trackers */
-/*works janky on mobile :<*/
+/* Card */
 
 .flex-container {
     display: flex;
@@ -137,9 +155,15 @@ nav ul li a img{
 .card-container:active {
   width: 180px;
   height: 245px;
+  padding-top: 60px;
+}
+
+.item-card{
+  margin-bottom: 60px;
 }
 
 #card {
+  
   
   position: absolute;
   inset: 0;
@@ -153,6 +177,7 @@ nav ul li a img{
   background-image: linear-gradient(rgba(184, 183, 183, 0.5), rgba(197, 193, 193, 0.5)), url('https://assets-v2.lottiefiles.com/a/490bc92a-1170-11ee-9e35-0f6eacef4099/DBwCBrM6eQ.gif');
 
   background-repeat: repeat;
+  width: 100%;
 }
 
 .subtitle {
@@ -220,6 +245,7 @@ nav ul li a img{
 }
 
 .canvas {
+  width: 100%;
   perspective: 800px;
   inset: 0;
   z-index: 200;
@@ -473,6 +499,9 @@ nav ul li a img{
 }
 
 .noselect {
+  width: 80%;
+  padding-top: 100%;
+
   -webkit-touch-callout: none;
    
   -webkit-user-select: none;
@@ -485,6 +514,8 @@ nav ul li a img{
  
 }
 
+
+
 .item-title{
   font-family: 'roboto';
   font-weight: 300;
@@ -496,3 +527,77 @@ nav ul li a img{
   font-weight: 400;
   transform: translateY(153px);
 }
+
+
+@media (min-width: 424px) {
+  nav{
+    height: 75px;
+    font-size: small;
+    
+  }
+}
+
+@media (min-width: 768px) {
+  nav{
+    height: 100px;
+    font-size: small;
+    
+  }
+
+
+
+  .snare-below-nav{
+    display: none;
+    
+  }
+  
+  .snare-nav{
+    display: block;
+    
+  }
+  
+
+  .noselect {
+    max-width: 100%;
+    padding-top: 100%;
+  }
+
+  .directory-slash{
+    display: inline;
+  }
+  
+  .directory-top-text{
+    display: block;
+    
+  }
+  
+  
+  .directory-bot-text{
+    display: inline;
+    text-decoration: none;
+    color: #393838;
+    font-family: 'Roboto';
+    font-weight: 300;
+  }
+  
+}
+
+@media (min-width: 909px) {
+  .noselect {
+    
+  }
+
+
+
+}
+
+@media (min-width: 1030px) {
+  .noselect {
+   
+  }
+
+
+  
+}
+
+
