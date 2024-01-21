@@ -8,16 +8,77 @@
 
 /* Item images */
 .item-home1{
-  background-image: url('assets/imgs/item-home1.avif');
+  background-image: url('imgs/item-home1.avif');
+  background-repeat: no-repeat;
+  background-size: 140% 105%;
+  background-position: center;
 }
 
 .item-home2{
-  background-image: url('assets/imgs/item-home2.webp');
+  background-image: url('imgs/item-home2.avif');
+  background-repeat: no-repeat;
+  background-size: 140% 105%;
+  background-position: center;
 }
 
 .item-home3{
-  background-image: url('assets/imgs/item-home3.jpeg');
+  background-image: url('imgs/item-home3.avif');
+  background-repeat: no-repeat;
+  background-size: 140% 105%;
+  background-position: center;
 }
+
+.item-home4{
+  background-image: url('imgs/item-home4.avif');
+  background-repeat: no-repeat;
+  background-size: 140% 105%;
+  background-position: center;
+}
+
+
+
+.item-circle1{
+  background-image: url('imgs/circle1.jpeg');
+  background-repeat: no-repeat;
+  background-size: 105% 105%;
+  background-position: center;
+}
+
+.item-circle2{
+  background-image: url('imgs/circle2.jpeg');
+  background-repeat: no-repeat;
+  background-size: 105% 105%;
+  background-position: center;
+}
+
+.item-circle3{
+  background-image: url('imgs/circle3.jpg');
+  background-repeat: no-repeat;
+  background-size: 105% 105%;
+  background-position: center;
+}
+
+.item-circle4{
+  background-image: url('imgs/circle1.jpg');
+  background-repeat: no-repeat;
+  background-size: 105% 105%;
+  background-position: center;
+}
+
+.item-circle5{
+  background-image: url('imgs/circle5.jpg');
+  background-repeat: no-repeat;
+  background-size: 105% 105%;
+  background-position: center;
+}
+
+.item-circle6{
+  background-image: url('imgs/circle6.jpg');
+  background-repeat: no-repeat;
+  background-size: 105% 105%;
+  background-position: center;
+}
+
 
 /* roboto is used*/
 * {
@@ -211,8 +272,11 @@ nav ul li a{
   width: 100%;
 }
 
+body{
+  background-image: url('css/imgs/home3.jpeg');
+}
 .square-item{
-  background-image: url("home3.jpeg");
+  
   border: 1px solid transparent;
   border-radius: 5%;
   height: 100%;

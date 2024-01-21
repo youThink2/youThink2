@@ -1,12 +1,16 @@
 
 document.addEventListener("DOMContentLoaded", function () {
+
+    //sgtores contact form
     const form = document.querySelector(".contactForm");
 
+    //checking if submit button is pressed (event listener)
     form.addEventListener("submit", function (event) {
         
+        //prevents default form submission from happening (in order to let us validate)
         event.preventDefault();
 
-        //Validate the form
+        //validate the form
         if (validateForm()) {
             
             form.submit();
@@ -17,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function validateForm() {
         let isValid = true;
 
-        // Validate First Name
+        //validate First Name
         const firstName = document.getElementById("firstName").value.trim();
         if (firstName === "") {
             alert("Please enter your First Name");
