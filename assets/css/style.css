@@ -1,9 +1,23 @@
-/* Variables */
+/* Storage */
 @font-face {
     font-family: Anarchy;
     src: url(fonts/AgainstMyself.ttf);
 }
 
+
+
+/* Item images */
+.item-home1{
+  background-image: url('assets/imgs/item-home1.avif');
+}
+
+.item-home2{
+  background-image: url('assets/imgs/item-home2.webp');
+}
+
+.item-home3{
+  background-image: url('assets/imgs/item-home3.jpeg');
+}
 
 /* roboto is used*/
 * {
@@ -144,7 +158,101 @@ nav ul li a{
     align-items: center; 
     
   }
+
+
+
+/* Home page */
+#carouselExample {
+  max-width: 400px; 
+  margin: auto; 
   
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.carousel-item img {
+  border: solid transparent;
+  border-radius: 7px;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  
+}
+
+
+.mid-item-div{
+  
+  height: 100%;
+  width: 100%;
+  border: solid transparent;
+  border-radius: 4px;
+}
+
+.mid-item-div .row{
+  padding: 0.7rem;
+  height: calc(55.5% - 3rem);
+}
+
+.padding-right{
+ padding-right: 6px;
+}
+
+.padding-left{
+  padding-left: 6px;
+}
+
+
+
+.square-item-div{
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+.square-item{
+  background-image: url("home3.jpeg");
+  border: 1px solid transparent;
+  border-radius: 5%;
+  height: 100%;
+  width: 100%;
+}
+
+.circle-home-div{
+  
+  
+  max-width: 400px; 
+}
+
+.circle-item-div {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+
+.custom-h-100px {
+  height: 100px;
+}
+
+.light{
+  font-weight: 300;
+}
+
+.circle-item {
+  background-color: #d0cfcf;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
 
 /* Card Product Pages*/
 
