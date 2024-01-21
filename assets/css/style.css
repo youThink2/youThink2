@@ -4,7 +4,7 @@
     src: url(fonts/AgainstMyself.ttf);
 }
 
-
+/* Note: px, rem and perentages are used for proportions*/
 
 /* Item images */
 .item-home1{
@@ -173,6 +173,7 @@ nav ul li a{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 
 .snare-below-nav{
   width: 250px;
@@ -705,6 +706,7 @@ body{
 }
 
 
+/* larger screen modifications - making nav bigger, putting snare logo in nav.. */
 @media (min-width: 424px) {
   nav{
     height: 75px;
